@@ -3,7 +3,7 @@
 	<groupId>org.upv.ufasu</groupId>
 	<artifactId>weather-multimodule</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>weather-multimodule application</name>
 	<url>http://www.upv.es</url>
 	<description>A multimodule application</description>
@@ -16,7 +16,7 @@
                 <connection>scm:git:git@github.com:jtorresfabra/ufasu-new.git</connection>
                 <url>scm:git:git@github.com:jtorresfabra/ufasu-new.git</url>
                 <developerConnection>scm:git:git@github.com:jtorresfabra/ufasu-new.git</developerConnection>
-          <tag>weather-multimodule-1.0.0</tag>
+          <tag>HEAD</tag>
   </scm>
          <dependencyManagement>
 		<dependencies>
