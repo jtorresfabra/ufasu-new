@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.upv.ufasu</groupId>
 	<artifactId>weather-multimodule</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>weather-multimodule application</name>
 	<url>http://www.upv.es</url>
 	<description>A multimodule application</description>
@@ -17,7 +16,8 @@
                 <connection>scm:git:git@github.com:jtorresfabra/ufasu-new.git</connection>
                 <url>scm:git:git@github.com:jtorresfabra/ufasu-new.git</url>
                 <developerConnection>scm:git:git@github.com:jtorresfabra/ufasu-new.git</developerConnection>
-        </scm>
+          <tag>weather-multimodule-1.0.0</tag>
+  </scm>
          <dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -133,19 +133,10 @@
 				</plugin>
 		
 
-			<plugin>
-                        	<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-        		            <classifier>${envClassifier}</classifier>
-        	        	</configuration>                        
-				
-                    	</plugin>
-			</plugins>		 	
+			
 	
 			</build>
-			<properties>                 	   
-				<envClassifier>linux</envClassifier>
-                        </properties>		
+			
 		</profile>
 	</profiles>
 	<reporting>
